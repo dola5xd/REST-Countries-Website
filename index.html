@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <script
+      src="https://kit.fontawesome.com/ce8e04198d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-D_Very_Light_Gray dark:bg-D_Very_Dark_blue max-w-[100vw] overflow-x-hidden"
+  >
+    <header class="bg-white dark:bg-D_Dark_blue w-full">
+      <nav
+        class="text-L_Very_Dark_blue dark:text-D_Very_Light_Gray flex items-center justify-between px-[30px] py-[50px] laptop:py-[25px] shadow-lg dark:shadow-D_Very_Dark_blue shadow-D_Very_Light_Gray text-[0.7rem] tablet:text-[1rem]"
+      >
+        <h1 class="font-semibold">Where in the world?</h1>
+        <button
+          class="flex items-center gap-3 font-medium duration-500 hover:opacity-70"
+          id="color_scheme"
+        >
+          <i class="fa-solid fa-moon -rotate-[30deg]"></i>Dark Mode
+        </button>
+      </nav>
+    </header>
+    <div class="head flex flex-col my-[30px] ml-[5%]">
+      <div class="w-full">
+        <div class="search relative">
+          <input
+            type="text"
+            name="search"
+            id="Search"
+            placeholder="Search for a countary..."
+            class="bg-white dark:bg-D_Dark_blue w-[95%] px-[15%] py-[15px] capitalize rounded-lg outline-0 text-[1em] font-normal text-L_Very_Dark_blue dark:text-D_Very_Light_Gray placeholder:text-L_Very_Dark_blue placeholder:dark:text-D_Very_Light_Gray placeholder:normal-case duration-500 focus:opacity-75"
+          />
+          <button
+            class="absolute text-L_Very_Dark_blue dark:text-D_Very_Light_Gray left-[3%] top-[15px] text-[1.1em] px-[13px] duration-500 hover:opacity-75"
+            id="searchBtn"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="relative inline-block text-left mt-[30px]">
+          <div>
+            <button
+              type="button"
+              class="inline-flex items-center w-full rounded-md bg-white dark:bg-D_Dark_blue px-[35px] py-[20px] text-[0.8rem] font-semibold text-L_Very_Dark_blue dark:text-D_Very_Light_Gray shadow-sm dark:shadow-D_Very_Dark_blue shadow-D_Very_Light_Gray"
+              id="menu-button"
+            >
+              Filter by Region
+              <svg
+                class="h-5 w-5 ml-[30px] text-L_Very_Dark_blue dark:text-D_Very_Light_Gray"
+                viewbox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white dark:bg-D_Dark_blue shadow-lg dark:shadow-D_Very_Dark_blue outline-0 transition-opacity duration-500"
+          >
+            <div
+              class="py-1 text-L_Very_Dark_blue dark:text-D_Very_Light_Gray font-medium text-[1em] hidden duration-500"
+              id="dropMenu"
+            >
+              <a
+                href="#"
+                class="block px-6 py-2 duration-700 hover:translate-x-[10px]"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+                >Africa</a
+              >
+              <a
+                href="#"
+                class="block px-6 py-2 duration-700 hover:translate-x-[10px]"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                >America</a
+              >
+              <a
+                href="#"
+                class="block px-6 py-2 duration-700 hover:translate-x-[10px]"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >Asia</a
+              >
+              <a
+                href="#"
+                class="block px-6 py-2 duration-700 hover:translate-x-[10px]"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-3"
+                >Europe</a
+              >
+              <a
+                href="#"
+                class="block px-6 py-2 duration-700 hover:translate-x-[10px]"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-4"
+                >Oceania</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="loading flex items-center flex-col">
+      <div class="loader duration-500 translate-y-1/2">
+        <span
+          class="block w-[50px] h-[50px] border-[5px] rounded-full dark:border-D_Dark_blue dark:border-r-L_Dark_Gray border-L_Dark_Gray border-r-D_Dark_blue"
+        ></span>
+      </div>
+      <div
+        class="countary-container flex flex-col tablet:gap-[50px] items-center w-full laptop:gap-x-[25px] laptop:justify-center laptop:p-[10px] laptop:flex-row laptop:flex-wrap"
+      ></div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
